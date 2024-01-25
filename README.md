@@ -11,5 +11,5 @@ This is a website make for making facebook fake comment screenshot . using this 
 ## How to use this?
 - just open the website url 
 - to edit anything just click on those element
-- after edit the comment box then lick the download arrow to download the image.
+- after edit the comment box click on the download arrow to download the image
 
