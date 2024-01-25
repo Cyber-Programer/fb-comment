@@ -1,7 +1,8 @@
 # fb-comment
 This is a website make for making facebook fake comment screenshot . using this web you can create simple fake facebook comment screenshot
 
-### Link : https://cyber-programer.github.io/fb-comment
+### Link1 : https://cyber-programer.github.io/fb-comment
+### Link2 : https://fb-comment.netlify.app/
 
 ## screenshot
 
