@@ -1,0 +1,319 @@
+:root{
+    --bg-normal:#fff;
+    --bg-dark: #2a313a;
+    --font-color-normal: black;
+    --font-color-dark:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #130f40;
+}
+
+[contenteditable="true"]:focus {
+    outline: 1px solid black;
+    padding: 2px; /* Optional: Add padding for better visual appearance */
+}
+
+
+.box{
+    width: 100%;
+    height: 100vh;
+    background: #130f40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment{
+    position: absolute;
+    width: 550px;
+    min-height: 500px;
+    background-color: var(--bg-normal);
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    top: 5%;
+}
+
+
+
+
+@media (max-width:700px) {
+    .comment{
+        width: 340px;
+        margin: 10px;
+    }
+}
+
+.comment h3{
+    font-size: 30px;
+    margin: 10px 10px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    transition: transform 0.4s ease-in;
+    /* color: var(--bg-normal); */
+}
+
+.comment h3:hover{
+    transform: scale(1.08);
+
+}
+
+.site-name-download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-name-download i{
+    position: relative;
+    right: -20px;
+    font-size: 25px;
+}
+
+.comment:hover{
+    box-shadow: 0 0 10px #f9ca24;
+    border-radius: 15px;
+}
+
+.comment > .main-box{
+    background-color: var(--bg-normal);
+    width: 85%;
+    height: auto;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    margin: 10px 0px 30px;
+    /* border: 2px solid black; */
+}
+
+.profile{
+    width: 100%;
+    height: 15%; 
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.profile p{
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s;
+}
+
+.profile .fa-solid{
+    display: inline-block;
+    font-size: 10px;
+}
+
+.profile .text{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.profile #name{
+    font-size: 20px;
+    color: var(--font-color-normal);
+    font-weight: 600;
+}
+
+.profile #time{
+    font-size: 15px;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+@media (max-width:700px) {
+    .profile img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+.content {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 90%;
+    max-height: 150px; /* Set your desired maximum height */
+    overflow-y: auto;
+}
+
+
+#h1{
+    height: 1px;
+    font-size: 1px;
+    margin: 5px 15px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Center vertically */
+    margin: 10px 20px;
+}
+
+.btns svg {
+    width: 25px;
+    height: 25px; /* Set the height to match the width for square icons */
+    stroke: gray;
+}
+
+.btns p {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-top: 5px; */
+    margin-right: 15px;
+    margin-left: 5px;
+    color: gray;
+    text-align: center; /* Center text horizontally */
+}
+
+.like, .coment, .share {
+    display: flex;
+    align-items: center;
+}
+
+.emojy-total-react {
+    display: flex;
+    margin-left: 10px;
+    color: gray;
+    /* gap: 10px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.emojy-total-react::after {
+    content: "";
+    position: absolute;
+    display: block; /* or display: inline-block; */
+    width: 80%;
+    height: 0.1px;
+    background-color: gray; /* Use background-color instead of color for the underline color */
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+
+.emojy-total-react img{
+    width: 20px;
+    height: 20px;
+    margin: 0 -2px;
+    /* padding: -20px; */
+}
+
+
+#cmt-type{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#cmt-type i{
+    font-size: 13px;
+    /* font-weight: 900; */
+}
+
+.cmnt{
+    width: 100%;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    
+}
+
+.cmnt img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.cmnt .cmnt-box{
+    /* position: relative; */
+    width: 70%;
+    background-color: rgb(237, 239, 245);
+    margin-left: 10px;
+    border-radius: 8px;
+    /* flex-grow: 1; */
+    /* max-height: 90px; */
+    /* overflow: hidden; */
+}
+
+.cmnt-box #main-cmnt{
+    max-height: 150px;
+    overflow: hidden;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cmnt-box h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .rap-tm{
+    width: 70%;
+    flex-direction: column;
+    align-items: flex-end;
+} */
+
+.cmnt-time{
+    position: relative;
+    width: 80%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    bottom: 10px;
+    color: gray;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+
+}
+
+.cmnt-time p{
+    margin-right: 5%;
+}
+
+.rap-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.cmnt-time .bld{
+    font-weight: 600;
+}
+
+@media (max-width:700px)  {
+    .cmnt-time{
+        margin-left: 35px;
+    }
+}
